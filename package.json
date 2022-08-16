@@ -1,0 +1,33 @@
+{
+  "name": "dalle-emoji-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start -p 8080",
+    "lint": "next lint",
+    "deploy": "npm run build && gcloud config set project dalle2-emoji-frontend && gcloud app deploy ./app.production.yaml -q"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.1",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@fontsource/roboto": "^4.5.7",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.3",
+    "next": "12.2.2",
+    "nextjs-google-analytics": "^2.0.0",
+    "node-emoji": "^1.11.0",
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-swipeable-views": "^0.14.0"
+  },
+  "devDependencies": {
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.2"
+  }
+}

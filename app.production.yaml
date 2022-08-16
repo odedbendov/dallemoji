@@ -1,0 +1,8 @@
+runtime: nodejs14
+instance_class: F4
+env_variables:
+  NEXT_PUBLIC_DEPLOYMENT_TYPE: "production"
+handlers:
+  - url: /.*
+    secure: always
+    script: auto
