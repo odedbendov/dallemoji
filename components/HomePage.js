@@ -147,22 +147,24 @@ export default function HomePage({ supportedEmojis }) {
 
         <Grid item container style={{ width: "auto", marginTop: 32 }} spacing={1} alignItems="center">
           <Grid item>
-            <Typography style={{fontSize: 24}}>
-              To contribute emojis: 
+            <Typography style={{ fontSize: 24 }}>
+              To contribute emojis:
             </Typography>
           </Grid>
           <Grid item>
-            <GitHubIcon style={{fontSize: 42}}/>
+            <a href='https://github.com/odedbendov/dallemoji'>
+              <GitHubIcon style={{ fontSize: 42 }} />
+            </a>
           </Grid>
           <Grid item>
-            <Typography style={{fontSize: 24}}>
-            🙏 ❤️
+            <Typography style={{ fontSize: 24 }}>
+              🙏 ❤️
             </Typography>
           </Grid>
         </Grid>
 
         <Typography align="center" style={{ fontWeight: 500, fontSize: 16, color: "darkgray", marginTop: 48 }}>
-          Special thanks to <a href="https://twitter.com/aaronwetzler" target="_blank" rel="noreferrer">@aaronwetzler</a> and <a href="https://twitter.com/ShaiFeder" target="_blank" rel="noreferrer">@shaifeder</a><br/>for believing in me and supplying credits post-ban 😂
+          Special thanks to <a href="https://twitter.com/aaronwetzler" target="_blank" rel="noreferrer">@aaronwetzler</a> and <a href="https://twitter.com/ShaiFeder" target="_blank" rel="noreferrer">@shaifeder</a><br />for believing in me and supplying credits post-ban 😂
         </Typography>
       </main>
 
