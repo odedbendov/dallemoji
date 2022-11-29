@@ -4,7 +4,7 @@ import { emojisLocalFolder } from '../../components/Globals';
 
 export default function handler(req, res) {
   try {
-    const files = fs.readdirSync(emojisLocalFolder, { withFileTypes: true });
+    const files = fs.readdirSync('./../public/emojis', { withFileTypes: true });
     res.status(200).json({ name: files.map(f => f.name) })
   }
   catch (err) {
